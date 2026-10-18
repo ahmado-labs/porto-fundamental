@@ -1,0 +1,135 @@
+/* 1. Reset Universal (Hanya reset dasar & box-sizing) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 2. Styling Body & Typography */
+body {
+    background-color: #070707;
+    font-family: Arial, sans-serif;
+    color: #efeded;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+nav {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hilangkan titik/bullet point bawaan list */
+ul {
+    list-style: none;
+}
+
+/* Flexbox untuk Menu Navigasi */
+.flex-menu {
+    display: flex;
+    justify-content: center; /* Posisi di tengah */
+    gap: 20px;               /* Jarak antar link */
+    margin-top: 10px;
+}
+
+/* Flexbox untuk Daftar Skill */
+.skill-list {
+    display: flex;
+    justify-content: space-around; /* Terbagi rata */
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+h1 {
+    background-color: #7a7979;
+    color: #0d0504;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* 3. Styling Link */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #8fc92c;
+}
+
+/* 4. Styling Kartu / Container (.card) */
+.card {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* 5. Form & Button Inputs */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #444;
+    background-color: #121212;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #133953;
+}
+
+footer {
+    background-color: #111;
+    color: #888;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .skill-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

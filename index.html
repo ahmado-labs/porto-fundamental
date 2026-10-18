@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html lang="id"> 
+<head> 
+   <meta charset="UTF-8"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>Website Pertama Ahmad</title>
+
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <header>
+      <h1>Kenalin Gue Ahmad</h1>
+      <img src="https://picsum.photos/200" alt="Foto Ahmad" width="150">
+      <p>Ini adalah <em>langkah pertama</em> <strong>Ahmad</strong></p>
+      <button id="btn-sapa">Tekan Aku</button>
+      <p id="teks-sapaan">Selamat belajar JavaScript!</p>
+   </header>
+   
+   <nav>
+      <h2>Tautan Favorit</h2>
+      <ul class="flex-menu">
+         <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></li>
+         <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+      </ul>
+   </nav>
+
+   <main>
+      <section class="card">
+         <h2>Skill yang Ingin Dikuasai</h2>
+         <ul class="skill-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+         </ul>
+      </section>
+
+      <section class="card">
+         <h2>Target Belajar minggu ini</h2>
+         <ol>
+            <li>Membuat website sederhana</li>
+            <li>Mempelajari dasar-dasar HTML</li>
+            <li>Mempelajari dasar-dasar CSS</li>
+         </ol>
+         <p>Bismillah.. Ini adalah langkah pertama saya belajar web development.</p>
+      </section>
+
+      <section class="card">
+         <h2>Rencana Proyek Saya</h2>
+         <ul id="daftar-proyek" class="skill-list"></ul>
+      </section>
+
+      <section class="card">
+         <h2>Hubungi Saya!</h2>
+         
+         <form id="form-kontak">
+            <p id="notifikasi-form"></p>
+            <div>
+                  <label for="name">Nama:</label>
+                  <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+            </div>
+
+            <div>
+                  <label for="message">Pesan:</label>
+                  <textarea id="message" name="message" placeholder="Tulis pesan Anda di sini" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Kirim</button>
+         </form>
+      </section>
+   </main>
+
+   <footer>
+      <p>&copy; 2026 Ahmad. Dibuat dengan semangat.</p>
+   </footer>
+
+   <script src="script.js"></script>
+</body> 
+</html>
